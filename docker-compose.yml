@@ -7,6 +7,8 @@ services:
       - discovery.type=single-node
       - xpack.security.enabled=true
       - ELASTIC_PASSWORD=changeme
+      - ELASTIC_USERNAME=elastic
+      - ES_JAVA_OPTS=-Xmx512m -Xms512m
     ports:
       - "9200:9200"
       - "9300:9300"
